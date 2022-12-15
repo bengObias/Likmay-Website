@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Kanit:wght@100;200;500&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="subPage">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="links">                
+                <i class="fa fa-times-circle" onclick="hide()"></i>
+                <ul>
+                    <li><a href="cart.html"><i class='fa fa-shopping-cart'></i></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active"href="#">Shop</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                    <li><a href="about.html">About Us</a></li>                   
+                </ul>               
+            </div>                
+            <i class="fa fa-bars" onclick="show()"></i>   
+        </nav>
+
+        <div class="shopHeader">
+            <h1>#ShopWithUs</h1>           
+            <p>Pick from our wide selection of designs or have a custom one crafted just for you!</p>                      
+        </div>
+    </section>
+
+    <section class="shopBody">
+   
+        <div class="shopCategoryList">
+            <h2>Categories</h2>
+            
+            <div class="shopCategory" id="active">
+                <h3>KEYCHAIN</h3> 
+                <a href="keychain.html"><img src="images/categories/keychain.png" alt=""></a>                              
+            </div>
+            <div class="shopCategory">
+                <h3>NECKLACE</h3> 
+                <a href=""><img src="images/categories/necklace.png" alt=""></a>               
+            </div>
+            <div class="shopCategory">
+                
+                <h3>FRAME</h3>   
+                <a href=""><img src="images/categories/frame.png" alt=""></a>             
+            </div>            
+            <div class="shopCategory">
+                
+                <h3>STANDEE</h3>  
+                <a href=""><img src="images/categories/standee.png" alt=""></a> 
+            </div>      
+            <div class="shopCategory">
+                
+                <h3>NIGHT LAMP</h3>       
+                <a href=""><img src="images/categories/lamp.png" alt=""></a>        
+            </div>            
+            <div class="shopCategory">
+                
+                <h3>PET TAG</h3>     
+                <a href=""><img src="images/categories/tag.png" alt=""></a>          
+            </div>            
+        </div>
+
+        <div class="shopItemList">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            
+            <div class="itemContainer">
+                <div class="shopItem">
+                    <a href=""><img src="images/keychain/keychain1.png" alt=""></a>
+                    <h4>Keychain 1</h4>
+                    <h3>Php 120</h3>
+                    <a href="cart.html"><i class='fa fa-shopping-cart cart'></i></a>
+                </div>
+                <div class="shopItem">
+                    <a href=""><img src="images/keychain/keychain2.png" alt=""></a>
+                    <h4>Keychain 1</h4>
+                    <h3>Php 120</h3>
+                    <a href="cart.html"><i class='fa fa-shopping-cart'></i></a>
+                </div>
+                <div class="shopItem">
+                    <a href=""><img src="images/keychain/keychain3.png" alt=""></a>
+                    <h4>Keychain 1</h4>
+                    <h3>Php 120</h3>
+                    <a href="cart.html"><i class='fa fa-shopping-cart'></i></a>
+                </div>
+                <div class="shopItem">
+                    <a href=""><img src="images/keychain/keychain4.png" alt=""></a>
+                    <h4>Keychain 1</h4>
+                    <h3>Php 120</h3>
+                    <a href="cart.html"><i class='fa fa-shopping-cart'></i></a>
+                </div>
+                <div class="shopItem">
+                    <a href=""><img src="images/keychain/keychain5.png" alt=""></a>
+                    <h4>Keychain 1</h4>
+                    <h3>Php 120</h3>
+                    <a href="cart.html"><i class='fa fa-shopping-cart'></i></a>
+                </div>
+                <div class="shopItem">
+                    <a href=""><img src="images/keychain/keychain6.png" alt=""></a>
+                    <h4>Keychain 1</h4>
+                    <h3>Php 120</h3>
+                    <a href="cart.html"><i class='fa fa-shopping-cart'></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+ 
+
+    <footer>
+        <div class="about">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="facebook.html"><i class='fa fa-facebook-square'></i></a>
+            <a href="instagram.html"><i class='fa fa-instagram'></i></a> 
+            <a href="twitter.html"><i class='fa fa-twitter-square'></i></i></a>    
+        </div>
+    </footer>
+
+    <script>
+        var links = document.getElementById("links");
+
+        function show(){
+            links.style.right = "0";
+        }
+        function hide(){
+            links.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
